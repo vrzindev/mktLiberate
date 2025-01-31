@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Linkando BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Linkando o HMTL com o Css -->
+    <link rel="stylesheet" href="design.css">
+    
+
+    <!-- Linkando o FaviCon -->
+    <link rel="icon" href="Imgs/faviconFT2.ico" type="image/x-icon">
+
+    <!-- Google Fonts (Importacao)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+               
+    <!-- Linkando FontAwesome -->
+    <script src="https://kit.fontawesome.com/2ad1a5dacd.js" crossorigin="anonymous"></script>
+
+    <title> FT - Liberar Banda</title>
+
+</head>
+
+<body class="PgPrincipal">
+
+    <nav class="nav-nova">
+        <div class="image-overlay"></div>
+        <img src="Imgs/focustelecomm_branco.png" class="imgNavbar" alt="" id="imgNavbar">
+    </nav>
+    
+    <main>
+<h1 id="testebranco" style="color: white; font-weight: bold;"> LIBERAR BANDA</h1>
+   
+
+<br>
+
+        <!--Script Botao-->
+    <form id="scriptForm" method="post">
+
+        <div class="tip" style="background-color: #22272E; display: inline-flex; border-radius: 10px;">
+            <label for="routerIP" class="ipLabel" style="color: white; font-weight: bold; font-size: large;">DIGITE O ENDEREÇO IP DO GATEWAY DO CONDOMÍNIO:</label>
+        </div>
+        
+        
+        <br>
+        <br>
+        <input placeholder="EX: 10.0.238.1 (FINAL 1)" class="ipAddress" id="routerIP" name="routerIP" >
+
+        
+        <br>
+
+        <input type="submit" class="btn btn-light" value="LIBERAR"  onclick="incrementarContador()">
+
+    </form>
+
+</div>
+</div>
+<br>
+    <div id="result"></div>
+
+    
+    <script>
+        
+        document.getElementById('scriptForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var ip = document.getElementById('routerIP').value;
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/hello');
+            xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    document.getElementById('result').innerText = xhr.responseText;
+                } else {
+                    document.getElementById('result').innerText = 'IP INVÁLIDO\nERRO: PODE SER QUE O IP NÃO EXISTA OU O MIKROTIK NÃO TENHA PERMISSÃO \n CASO OCORRA ALGUMA DÚVIDA, CONTATE O VITOR RAMOS.';
+                }
+            };
+            xhr.send('routerIP=' + ip);
+        });
+    </script>
+
+</main>
+
+<!-- Rodapé com Créditos -->
+<footer class="footer-creditos">
+    <div class="container text-center">
+        <p class="creditos-text">Desenvolvido por Vitor Ramos © 2024</p>
+        <p class="creditos-icons">
+            <a href="https://linkedin.com/in/seuPerfil" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/seuPerfil" target="_blank"><i class="fab fa-github"></i></a>
+        </p>
+    </div>
+</footer>
+
+<!-- Integrando JS e Popper do BootStrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  
+<script>

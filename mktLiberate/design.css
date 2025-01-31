@@ -1,0 +1,168 @@
+
+/* Mudando a cor de fundo do site */
+
+.PgPrincipal {
+    background-color:#647587; 
+    font-family: "Poppins", sans-serif;
+    color:aliceblue;
+
+}
+
+main {
+    padding: 2%;
+    font-family: "Poppins", sans-serif;
+ 
+}
+.nav-nova{
+    width: 100%;
+    background-color: #22272E;
+    height: auto;
+    padding: 1rem;
+}
+
+/* Inicio da edicao da NavBar */
+
+.navbar-custom {     
+    background-color:#22272E;  /* cor alternativa da NavBar #4269E2 */
+}
+
+/* Ajustando a imagem da NavBar */
+.imgNavbar {
+    width: 15rem;
+    height: auto;/* Isso garante que a propor��o original seja mantida */
+}
+
+/* Mover a imagem para a direita */
+.image-overlay {
+    margin-left: 1%;
+  }
+
+/* Movendo ancoras para a direita 
+.navbar-nav {
+   margin-left: 63%;
+} */
+
+.navbar-nav .nav-link {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100%; /* Tamanho da fonte */
+    font-weight: normal; /* Peso da fonte (normal, bold, etc.) */
+    color:#F0F8FF; /* Cor do texto */
+
+    /* Adicione outros estilos desejados, como margens, espa�amentos, etc. */
+  }
+
+  .navbar-nav .nav-link:hover {
+    color:#FAD744; /* Comando que substitui a cor do texto ao passar o mouse */
+  }
+
+  /* Mudar a cor da imagem quando o mouse passa sobre ela */
+  
+#logoLink:hover #imgNavbar {
+    filter: invert(130%); /* Pode ajustar a intensidade da invers�o de cor conforme necess�rio */
+  }
+
+  /* Fim da edicao da navbar */
+
+/* Inicio da edicao do Carousel (Inicio) */
+
+
+
+/* /* Inicio Carousel Myself */
+
+#TesteCarouselMysefl{
+    max-width: 2000%; /* Defina a largura m�xima desejada para o carrossel */
+    margin: 0 auto; /* Centraliza o carrossel no cont�iner */
+    height: auto;
+}
+
+
+#CarouselMySelfCircle{
+    border-radius: 50%; /* Define a borda do conte�do interno do carousel como c�rculo */
+    overflow: hidden; /* Garante que a imagem dentro do c�rculo n�o ultrapasse os limites */
+}
+
+
+/* Fim Carousel Myself */  
+
+.TitlePortif {
+    color:#F0F8FF;
+font-weight: bold;
+    margin-bottom: 2rem;
+
+}
+
+.TitleBibli {
+    color: white;
+            font-size: 230%;
+            
+}
+
+.btn {
+    background-color: #22272E;
+    color: white;
+    font-weight: 800;
+    padding: 1rem 2rem;
+}
+.btn:hover {
+    background-color: white;
+    color: black;
+    font-weight: 800;
+    padding: 1rem 2rem;
+    outline: black;
+}
+
+.ListPhraseBibli {
+    color: #F0F8FF; /* Dentro da div s� deu certo de mudar a cor com cod Hexadecimal  */
+             font-size: 130%;
+}
+.routerIP {
+    outline: none;
+    padding: 0.75rem;
+    border-radius: 1rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+.ipAddress {
+    outline: none;
+    padding: 0.75rem;
+    border-radius: 1rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.ipLabel {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+.footer-creditos {
+    background-color: #22272E;
+    color: #F0F8FF;
+    font-family: "Poppins", sans-serif;
+    padding: 1rem 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+main {
+    padding-bottom: 60px; /* Espaço para evitar que o conteúdo sobreponha o rodapé fixo */
+}
+
+.creditos-text {
+    margin: 0;
+    font-weight: 600;
+}
+
+.creditos-icons a {
+    color: #F0F8FF;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+.creditos-icons a:hover {
+    color: #FAD744;
+}
