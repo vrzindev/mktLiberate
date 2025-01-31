@@ -1,26 +1,30 @@
-# mktLiberate
+# 🚀 mktLiberate
 
-This project is also available in [Portuguese](/mktLiberate/README-pt.md).
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
+[![MikroTik](https://img.shields.io/badge/MikroTik-SSH-red)](https://mikrotik.com/)
 
-## Project Description
+> 🌎 **This project is also available in [Portuguese](/mktLiberate/README-pt.md).**
 
-**mktLiberate** is an automated system designed to manage and release queues on MikroTik devices. The system was developed to simplify network management, allowing users to make adjustments intuitively through a web interface.
+## 📌 Project Description
 
-The project consists of a Python backend that connects to MikroTik devices via SSH to execute specific commands, and a web frontend that enables users to interact with the system in a simple and efficient way.
+**mktLiberate** is an automated system designed to **manage and release queues** on **MikroTik** devices. The system was developed to **simplify network management**, allowing users to make **adjustments intuitively** through a **web interface**.
 
-## Key Features
+The project consists of a **Python backend** that connects to **MikroTik** devices via **SSH** to execute specific commands, and a **web frontend** that enables users to interact with the system in a **simple and efficient way**.
 
-- **IP Release**: The system allows the release of specific IPs on the network by disabling queues and creating an address list with a defined timeout.
-- **Intuitive Web Interface**: A simple and user-friendly web interface for entering the router's IP and performing the release.
-- **Command Automation**: Automatic execution of MikroTik commands via SSH to disable queues and create address lists.
+## 🚀 Key Features
 
-## Technologies Used
+- 🔹 **IP Release**: The system allows the release of **specific IPs** on the network by disabling queues and creating an **address list** with a **defined timeout**.
+- 🎨 **Intuitive Web Interface**: A **simple and user-friendly web interface** for entering the **router's IP** and performing the release.
+- ⚙️ **Command Automation**: Automatic execution of **MikroTik commands** via **SSH** to **disable queues** and create **address lists**.
 
-- **Python**: For backend logic and SSH connection to MikroTik devices.
-- **Paramiko**: Python library for SSH connections.
-- **HTML/CSS**: For creating the web interface.
-- **WSGI**: Interface for serving the web application.
+## 🛠️ Technologies Used
 
-## Licença
+- 🐍 **Python**: For backend logic and **SSH** connection to **MikroTik** devices.
+- 🔐 **Paramiko**: Python library for **SSH** connections.
+- 🎨 **HTML/CSS**: For creating the web interface.
+- 🌐 **WSGI**: Interface for serving the web application.
 
-This project is licensed under MIT License. See the [LICENSE](LICENSE) file for more details.
+## 📜 License
+
+This project is licensed under the **MIT License**. See the [📜 LICENSE](LICENSE) file for more details.
