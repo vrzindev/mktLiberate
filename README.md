@@ -1,6 +1,6 @@
 # mktLiberate
 
-This project is also available in [Portuguese](/mktLiberate/REAME-pt).
+This project is also available in [Portuguese](/mktLiberate/REAME-pt.md).
 
 ## Project Description
 
