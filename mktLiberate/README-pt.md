@@ -1,6 +1,6 @@
 # mktLiberate
 
-Este projeto também está disponível em [inglês](README.md).
+Este projeto também está disponível em [inglês](/README.md).
 
 ## Descrição do Projeto
 
