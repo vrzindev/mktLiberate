@@ -1,24 +1,26 @@
 # mktLiberate
 
-## Descrição do Projeto
+This project is also available in [Portuguese](README-pt.md).
 
-O **mktLiberate** é um sistema automatizado desenvolvido para gerenciar e liberar filas (queues) em dispositivos MikroTik. O sistema foi criado com o objetivo de facilitar a gestão de redes, permitindo que usuários realizem ajustes de forma intuitiva através de uma interface web.
+## Project Description
 
-O projeto consiste em um backend em Python que se conecta aos dispositivos MikroTik via SSH para executar comandos específicos, e um frontend web que permite aos usuários interagir com o sistema de forma simples e eficiente.
+**mktLiberate** is an automated system designed to manage and release queues on MikroTik devices. The system was developed to simplify network management, allowing users to make adjustments intuitively through a web interface.
 
-## Funcionalidades
+The project consists of a Python backend that connects to MikroTik devices via SSH to execute specific commands, and a web frontend that enables users to interact with the system in a simple and efficient way.
 
-- **Liberação de IPs**: O sistema permite liberar IPs específicos na rede, desabilitando filas (queues) e criando uma lista de endereços com um timeout definido.
-- **Interface Web Intuitiva**: Uma interface web simples e fácil de usar para inserir o IP do roteador e realizar a liberação.
-- **Automatização de Comandos**: Execução automática de comandos MikroTik via SSH para desabilitar filas e criar listas de endereços.
+## Key Features
 
-## Tecnologias Utilizadas
+- **IP Release**: The system allows the release of specific IPs on the network by disabling queues and creating an address list with a defined timeout.
+- **Intuitive Web Interface**: A simple and user-friendly web interface for entering the router's IP and performing the release.
+- **Command Automation**: Automatic execution of MikroTik commands via SSH to disable queues and create address lists.
 
-- **Python**: Para a lógica de backend e conexão SSH com os dispositivos MikroTik.
-- **Paramiko**: Biblioteca Python para conexão SSH.
-- **HTML/CSS**: Para a criação da interface web.
-- **WSGI**: Interface para servir a aplicação web.
+## Technologies Used
+
+- **Python**: For backend logic and SSH connection to MikroTik devices.
+- **Paramiko**: Python library for SSH connections.
+- **HTML/CSS**: For creating the web interface.
+- **WSGI**: Interface for serving the web application.
 
 ## Licença
 
-Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+This project is licensed under MIT License. See the [LICENSE](LICENSE) file for more details.
